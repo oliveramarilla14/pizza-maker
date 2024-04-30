@@ -1,4 +1,3 @@
-import { Container } from '@mui/material'
 import Register from './components/login/Register'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Login from './components/login/Login'
@@ -16,7 +15,7 @@ export default function App () {
   }, [loginStatus])
 
   return (
-    <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+    < >
 
       <Routes>
         <Route path='/login' Component={Login} />
@@ -24,7 +23,7 @@ export default function App () {
         <Route path='/' Component={PizzaMaker} />
       </Routes>
 
-    </Container>
+    </>
 
   )
 }
